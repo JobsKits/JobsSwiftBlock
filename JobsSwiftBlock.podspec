@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
   # ====================== 根层基础工具（根目录 Swift） ======================
   s.source_files = [
-    'JobsSwiftBlock.swift'
+    'JobsSwiftPodsBlock.swift'
   ]
 
   # ====================== 系统库依赖：所有代码共享 ======================
