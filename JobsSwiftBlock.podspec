@@ -18,8 +18,9 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
 
-  # 全局排除脚本 / 图标
+  # 全局排除脚本 / 图标 / 未列入此Pod的文件
   s.exclude_files = [
+    'JobsSwiftNormalBlock.swift',
     'MacOS/🫘JobsPublishPods.command',
     'icon.png',
   ]
