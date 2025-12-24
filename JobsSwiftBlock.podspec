@@ -38,4 +38,8 @@ Pod::Spec.new do |s|
   s.dependency 'YTKNetwork'
   s.dependency 'SnapKit'
   s.dependency 'Kingfisher'
+  s.dependency 'JobsSwiftBaseDefines'
+
+
+
 end
