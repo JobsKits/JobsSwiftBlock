@@ -9,11 +9,9 @@ import AppKit
 #elseif os(iOS) || os(tvOS)
 import UIKit
 #endif
-/// Cocoapods@SnapKit
-#if canImport(SnapKit)
-import SnapKit
-public typealias BackButtonLayout = (JobsNavBar, UIButton, ConstraintMaker) -> Void
-#endif
+import ObjectiveC
+
 public typealias TimerStateChangeHandler = (_ button: UIButton,
                                             _ oldState: TimerState,
                                             _ newState: TimerState) -> Void
+public typealias jobsByOpenResultBlock = (JobsOpenResult) -> Void

@@ -21,13 +21,14 @@ Pod::Spec.new do |s|
   # 全局排除脚本 / 图标 / 未列入此Pod的文件
   s.exclude_files = [
     'JobsSwiftNormalBlock.swift',
+    'JobsSwift3rdPodsBlock.swift',
     'MacOS/🫘JobsPublishPods.command',
     'icon.png',
   ]
 
   # ====================== 根层基础工具（根目录 Swift） ======================
   s.source_files = [
-    'JobsSwiftPodsBlock.swift'
+    'JobsSwiftBaseBlock.swift'
   ]
 
   # ====================== 系统库依赖：所有代码共享 ======================
@@ -35,12 +36,10 @@ Pod::Spec.new do |s|
                      'WebKit'
 
   # ====================== 第三方依赖：所有代码共享 ======================
-  s.dependency 'Moya'
-  s.dependency 'YTKNetwork'
-  s.dependency 'SnapKit'
-  s.dependency 'Kingfisher'
-  s.dependency 'JobsSwiftBaseDefines'
-
-
+  # s.dependency 'Moya'
+  # s.dependency 'YTKNetwork'
+  # s.dependency 'SnapKit'
+  # s.dependency 'Kingfisher'
+  # s.dependency 'JobsSwiftBaseDefines'
 
 end
